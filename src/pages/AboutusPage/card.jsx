@@ -1,5 +1,5 @@
 import React from 'react';
-import './Card.css'; // Import external CSS
+import './card.css'; // Import external CSS
 
 const Card = (props) => {
 
@@ -10,7 +10,7 @@ const Card = (props) => {
   return (
     <div className="card-wrapper">
       <div 
-      className="card" 
+      className="cardabout" 
      style={{ backgroundImage: `url(${props.achievement.image})` }}>
        
         <div className="card__content">

@@ -117,8 +117,8 @@ const pointVariants = {
 
 const AboutusPage = () => {
   return (
-    <div className="super-containner">
-    <div className="main-containner">
+    <div className="super--containner">
+    <div className="main--containner">
       <h1>❓About Us</h1>
       <div className="content1">
         <p> We are a team of individuals from multiple disciplines, driven by the desire of implementing solutions ubounded by the limits of knowledge or techical know-how. 
@@ -137,7 +137,7 @@ const AboutusPage = () => {
       </div>
       <div className="content2">
        <h2>🎯Our Achievements</h2>
-       <div className="cards">
+       <div className="cards-">
         {
            achievements.map((achievement, index) => (
              <Card key={index} achievement={achievement} />

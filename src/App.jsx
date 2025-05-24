@@ -6,6 +6,8 @@ import TimelinePage from './pages/TimelinePage/TimelinePage';
 
 import './App.css'; // For global app layout styles if needed
 import { GitHub, Twitter, LinkedIn } from '@mui/icons-material'; // Example icons for a nav
+import MerchPage from './pages/MerchPage/MerchPage.jsx';
+import ScrollToTopButton from './components/moveToTop'; // Import the scroll to top button
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Link to="/" className="nav-logo">ETH10Y</Link>
           <div className="nav-links">
             <Link to="/">Home</Link>
+
+            <Link to="/merchandise">Merchandise</Link>
            
             <Link to="/timeline">Timeline</Link>
              <Link to="/about">About</Link> 
@@ -31,8 +35,12 @@ function App() {
         <main className="content-area">
           <Routes>
             <Route path="/" element={<HomePage />} />
+
+            <Route path="/merchandise" element={<MerchPage />} />
+
              <Route path="/about" element={<AboutusPage />} /> 
             <Route path="/timeline" element={<TimelinePage />} />
+
             {/* <Route path="/about" element={<AboutPage />} /> */}
             {/* Add more routes here */}
           </Routes>
@@ -42,8 +50,10 @@ function App() {
           <p>© {new Date().getFullYear()} Ethereum 10 Year Anniversary. Decentralize Everything!</p>
         </footer>
       </div>
+      <ScrollToTopButton />
     </Router>
   );
+
 }
 
 export default App;

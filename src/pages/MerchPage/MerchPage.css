@@ -1,0 +1,448 @@
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+} */
+
+.merch-container {
+    background-image: url(../../assets/Merch_Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.masking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    margin: auto;
+
+
+}
+
+
+.masked-text {
+    font-size: 8rem;
+    font-weight: bold;
+    color: transparent;
+    background-image: url('../../assets//text-bg.jpg');
+    background-size: 200%;
+    /* Enlarged for smooth animation */
+    background-position: 0 65%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-background 5s infinite alternate linear;
+
+}
+
+
+.diamond-loader {
+    position: relative;
+    width: 150px;
+    height: 200px;
+
+}
+
+.pyramid-loader {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    display: block;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg);
+    top: -15%;
+
+}
+
+.pyramid-loader.inverted {
+    top: 8%;
+    transform: rotateX(160deg);
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: spin 4s linear infinite;
+}
+
+.pyramid-loader.inverted .wrapper {
+    animation: spin 4s linear infinite reverse;
+    /* reverse the spin for inverted */
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.pyramid-loader .wrapper .side {
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform-origin: center top;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.pyramid-loader .wrapper .side1 {
+    transform: rotateZ(-30deg) rotateY(90deg);
+    background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .side2 {
+    transform: rotateZ(30deg) rotateY(90deg);
+    background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side3 {
+    transform: rotateX(30deg);
+    background: conic-gradient(#2F2585, #D8CCE6, #F028FD, #2BDEAC);
+}
+
+.pyramid-loader .wrapper .side4 {
+    transform: rotateX(-30deg);
+    background: conic-gradient(#2BDEAC, #F028FD, #D8CCE6, #2F2585);
+}
+
+.pyramid-loader .wrapper .shadow {
+    width: 60px;
+    height: 60px;
+    background: #8B5AD5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotateX(90deg) translateZ(-40px);
+    filter: blur(12px);
+}
+
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .masked-text {
+        font-size: 7rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .masked-text {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .masked-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .masked-text {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .masked-text {
+        font-size: 2rem;
+    }
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    transition: background-position 1s steps(28);
+    transition-duration: 0s;
+
+    &.is-active {
+        transition-duration: 1s;
+        background-position: -2800px 0;
+    }
+}
+
+
+.stage {
+    position: absolute;
+    top: -4%;
+    right: -4%;
+    transform: none;
+    z-index: 45;
+
+}
+
+/* SizeChartButton.css */
+
+.size-chart-button-container {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .size-chart-button-container {
+        margin-top: 0;
+    }
+}
+
+.size-chart-button {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #a29bfe;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-top-left-radius: 0.5rem;
+
+    border-bottom-left-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.size-chart-button:hover {
+    background-color: #3c366b;
+
+}
+
+.size-chart-button .icon {
+    margin-right: 0.25rem;
+}
+
+
+.product-container {
+    position: relative;
+}
+
+.card {
+    font-family: Lato, sans-serif;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background: rgba(65, 105, 225, 0.85);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--product-color);
+    clip-path: circle(150px at 80% 20%);
+    transition: .5s ease-in-out;
+}
+
+.card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.title {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.bg-title {
+    font-size: 10em;
+    font-weight: 900;
+    font-style: italic;
+    color: rgba(255, 255, 255, .1);
+    position: absolute;
+    max-width: 120%;
+    top: -150%;
+    transition: .6s;
+}
+
+.card:hover .bg-title {
+    transform: translateY(60%);
+}
+
+.photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    transition: .5s;
+}
+
+.card:hover .photo {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.photo img {
+    position: absolute;
+    width: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    transition: .5s;
+}
+
+.card:hover .photo img {
+    width: 260px;
+    top: 75%;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 5;
+}
+
+.card:hover .content {
+    height: 190px;
+}
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover .feature {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.feature div {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.feature span {
+    min-width: 20px;
+    padding: 0 4px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: .4s;
+    border-radius: 4px;
+    cursor: pointer
+}
+
+.feature span:hover {
+    color: #000;
+    background: var(--product-color);
+}
+
+.btn-buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+.card:hover .btn-buy {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.card:hover .btn-buy:hover {
+    background: var(--product-color);
+    transition-delay: 0;
+    transition: 0.05s;
+}
+
+.product-1 {
+    --product-color: #a29bfe;
+}
+
+.size span {
+    cursor: pointer;
+    z-index: 50;
+}
+
+.feature .tt:hover {
+    background: #038dff;
+}
+
+.feature .ttt:hover {
+    background: #09ff0d;
+}
