@@ -73,14 +73,14 @@ ul li{
 
 @media (max-width: 900px) 
 {
-    .main-containner
+    .main--containner
     {
         margin: 1rem 2.5rem;
     }
 }
 @media (max-width: 600px)
 {
-    .main-containner
+    .main--containner
     {
         margin: 0.5rem;
     }
