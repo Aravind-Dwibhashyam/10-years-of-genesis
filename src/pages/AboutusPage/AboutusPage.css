@@ -35,11 +35,11 @@
  font-family: 'Roboto Mono', monospace;
   
 }
-.content
+.content1
 {
     padding: 1rem;
 }
-.content p{
+.content1 p{
     margin: 5px;
 }
 .content ul{
