@@ -124,7 +124,7 @@ const AboutusPage = () => {
         <p> We are a team of individuals from multiple disciplines, driven by the desire of implementing solutions ubounded by the limits of knowledge or techical know-how. 
           Cyberlabs is the official programming club of IIT(ISM) Dhanbad which acts as a platform for the people enthusiastic about technology to work together.
           It was founded post inpiration on the footsteps of MIT MEDIA LABS by an enthusiatic and ticking learner 
-          `who discovered a scope beyond rote learning and plain-vanilla implementations of the common problems and sci-fi solutions.</p>
+          who discovered a scope beyond rote learning and plain-vanilla implementations of the common problems and sci-fi solutions.</p>
         <p>
           At <strong>Cyberlabs</strong>, we are a vibrant community of
           blockchain visionaries,builders and enthusiasts united by a shared passion  for decentralized technology
