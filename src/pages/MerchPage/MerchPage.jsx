@@ -114,7 +114,7 @@ const MerchPage = () => {
                 <div className='card-container'>
                     {Merchandise.map((merch) => (
                         <section key={merch.id} className="product-container product-1">
-                            <div className="card">
+                            <div className="card_1">
                                 <div className="stage">
                                     <div className={`heart ${likedItems[merch.id] ? "is-active" : ""}`}
                                         onClick={() => toggleHeart(merch.id)}></div>

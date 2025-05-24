@@ -10,7 +10,7 @@ const Card = (props) => {
   return (
     <div className="card-wrapper">
       <div 
-      className="card" 
+      className="cardabout" 
      style={{ backgroundImage: `url(${props.achievement.image})` }}>
        
         <div className="card__content">
