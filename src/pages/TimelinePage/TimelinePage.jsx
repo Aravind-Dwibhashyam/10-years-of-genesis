@@ -4,15 +4,76 @@ import './TimelinePage.css';
 function TimelinePage() {
     const milestones = [
   {
-    "year": "2015",
-    "title": "Frontier Launch",
-    "description": "The initial release of the Ethereum network, enabling the deployment of smart contracts and decentralized applications (dApps).",
+    
+    "year": "2025",
+    "title": 'A Decade of Innovation!',
+    "description": 'Celebrating 10 years of decentralized progress and looking to the future.',
     "eips": [],
   },
   {
+    
+    "year": "2025",
+    "title": "Prague-Electra (Pectra) Upgrade",
+    "description": "Included improvements to Ethereum's staking architecture, enhancing scalability and flexibility.",
+    "eips": ["EIP-7251", "EIP-7002"],
+  },
+  {
+    
+    "year": "2023",
+    "title": "Shanghai Upgrade",
+    "description": "Enabled users to withdraw their staked ETH and staking rewards, completing the transition to Proof-of-Stake.",
+    "eips": [],
+  },
+  {
+   
+    "year": "2022",
+    "title": "The Merge",
+    "description": "Transitioned Ethereum from Proof-of-Work to Proof-of-Stake, significantly reducing energy consumption.",
+    "eips": [],
+  },
+  {
+    
+    "year": "2021",
+    "title": "London Upgrade",
+    "description": "Implemented EIP-1559, changing the transaction fee mechanism and introducing a base fee that is burned.",
+    "eips": ["EIP-1559", "EIP-3198", "EIP-3529", "EIP-3541", "EIP-3554"],
+  },
+  {
+    
+    "year": "2021",
+    "title": "Berlin Upgrade",
+    "description": "Introduced several EIPs to address gas price issues and introduce new transaction types.",
+    "eips": ["EIP-2565", "EIP-2718", "EIP-2929", "EIP-2930"],
+  },
+  {
+    
+    "year": "2019",
+    "title": "Istanbul Upgrade",
+    "description": "Optimized gas costs and enabled Layer 2 scaling solutions using zk-SNARKs and STARKs.",
+    "eips": [],
+  },
+  {
+    "year": "2019",
+    "title": "Constantinople & Petersburg",
+    "description": "Introduced EIP-1234 to reduce block rewards and delay the difficulty bomb.",
+    "eips": ["EIP-1234"],
+  },
+  {
+    "year": "2017",
+    "title": "Byzantium Upgrade",
+    "description": "Part of the Metropolis phase, introducing privacy improvements and delaying the difficulty bomb.",
+    "eips": ["EIP-100"],
+  },
+  {
     "year": "2016",
-    "title": "Homestead Upgrade",
-    "description": "The first planned hard fork, introducing protocol improvements and removing the 'canary' centralization point.",
+    "title": "Spurious Dragon",
+    "description": "Improved network security and efficiency following spam attacks by adjusting gas costs and removing empty accounts.",
+    "eips": [],
+  },
+  {
+     "year": "2016",
+    "title": "Tangerine Whistle",
+    "description": "Addressed network congestion caused by a spam attack by adjusting gas costs.",
     "eips": [],
   },
   {
@@ -23,68 +84,14 @@ function TimelinePage() {
   },
   {
     "year": "2016",
-    "title": "Tangerine Whistle",
-    "description": "Addressed network congestion caused by a spam attack by adjusting gas costs.",
+    "title": "Homestead Upgrade",
+    "description": "The first planned hard fork, introducing protocol improvements and removing the 'canary' centralization point.",
     "eips": [],
   },
   {
-    "year": "2016",
-    "title": "Spurious Dragon",
-    "description": "Improved network security and efficiency following spam attacks by adjusting gas costs and removing empty accounts.",
-    "eips": [],
-  },
-  {
-    "year": "2017",
-    "title": "Byzantium Upgrade",
-    "description": "Part of the Metropolis phase, introducing privacy improvements and delaying the difficulty bomb.",
-    "eips": ["EIP-100"],
-  },
-  {
-    "year": "2019",
-    "title": "Constantinople & Petersburg",
-    "description": "Introduced EIP-1234 to reduce block rewards and delay the difficulty bomb.",
-    "eips": ["EIP-1234"],
-  },
-  {
-    "year": "2019",
-    "title": "Istanbul Upgrade",
-    "description": "Optimized gas costs and enabled Layer 2 scaling solutions using zk-SNARKs and STARKs.",
-    "eips": [],
-  },
-  {
-    "year": "2021",
-    "title": "Berlin Upgrade",
-    "description": "Introduced several EIPs to address gas price issues and introduce new transaction types.",
-    "eips": ["EIP-2565", "EIP-2718", "EIP-2929", "EIP-2930"],
-  },
-  {
-    "year": "2021",
-    "title": "London Upgrade",
-    "description": "Implemented EIP-1559, changing the transaction fee mechanism and introducing a base fee that is burned.",
-    "eips": ["EIP-1559", "EIP-3198", "EIP-3529", "EIP-3541", "EIP-3554"],
-  },
-  {
-    "year": "2022",
-    "title": "The Merge",
-    "description": "Transitioned Ethereum from Proof-of-Work to Proof-of-Stake, significantly reducing energy consumption.",
-    "eips": [],
-  },
-  {
-    "year": "2023",
-    "title": "Shanghai Upgrade",
-    "description": "Enabled users to withdraw their staked ETH and staking rewards, completing the transition to Proof-of-Stake.",
-    "eips": [],
-  },
-  {
-    "year": "2025",
-    "title": "Prague-Electra (Pectra) Upgrade",
-    "description": "Included improvements to Ethereum's staking architecture, enhancing scalability and flexibility.",
-    "eips": ["EIP-7251", "EIP-7002"],
-  },
-  {
-   "year": "2025",
-    "title": 'A Decade of Innovation!',
-    "description": 'Celebrating 10 years of decentralized progress and looking to the future.',
+   "year": "2015",
+    "title": "Frontier Launch",
+    "description": "The initial release of the Ethereum network, enabling the deployment of smart contracts and decentralized applications (dApps).",
     "eips": [],
   }
 ];
