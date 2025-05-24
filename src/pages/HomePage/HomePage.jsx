@@ -38,18 +38,25 @@ const HomePage = () => {
 
   const milestones = [
     {
-      year: '2015',
-      title: 'Ethereum Genesis',
-      description: 'The Ethereum network officially launches, enabling smart contracts and dApps.',
-      icon: <RocketLaunchIcon/>
+      year: '2025',
+      title: 'A Decade of Innovation!',
+      description: 'Celebrating 10 years of decentralized progress and looking to the future.',
+      icon: <PeopleAltIcon />,
    
     },
     {
-      year: '2017',
-      title: 'ICO Boom & ERC-20',
-      description: 'The ERC-20 token standard fuels a wave of Initial Coin Offerings, showcasing Ethereum\'s versatility.',
-      icon: <TrendingUpIcon />,
+      year: '2022',
+      title: 'The Merge',
+      description: 'Ethereum transitions from Proof-of-Work to Proof-of-Stake, drastically reducing energy consumption.',
+      icon: <TimelineIcon />,
     
+    },
+    {
+      
+      year: '2021',
+      title: 'NFT Mania',
+      description: 'Non-Fungible Tokens enter mainstream consciousness, revolutionizing digital ownership.',
+      icon: <CelebrationIcon />,
     },
     {
       year: '2020',
@@ -58,22 +65,18 @@ const HomePage = () => {
       icon: <CodeIcon />,
     },
     {
-      year: '2021',
-      title: 'NFT Mania',
-      description: 'Non-Fungible Tokens enter mainstream consciousness, revolutionizing digital ownership.',
-      icon: <CelebrationIcon />,
+      
+      year: '2017',
+      title: 'ICO Boom & ERC-20',
+      description: 'The ERC-20 token standard fuels a wave of Initial Coin Offerings, showcasing Ethereum\'s versatility.',
+      icon: <TrendingUpIcon />,
     },
     {
-      year: '2022',
-      title: 'The Merge',
-      description: 'Ethereum transitions from Proof-of-Work to Proof-of-Stake, drastically reducing energy consumption.',
-      icon: <TimelineIcon />,
-    },
-    {
-      year: '2025',
-      title: 'A Decade of Innovation!',
-      description: 'Celebrating 10 years of decentralized progress and looking to the future.',
-      icon: <PeopleAltIcon />,
+      
+      year: '2015',
+      title: 'Ethereum Genesis',
+      description: 'The Ethereum network officially launches, enabling smart contracts and dApps.',
+      icon: <RocketLaunchIcon/>
     },
   ];
 
