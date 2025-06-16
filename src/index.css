@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Poppins:wght@300;400;600;700&display=swap');
-
+@import url('../src/pages/TriviaPage/QuizPage.css');
+@import url('../src/pages/TriviaPage/SolutionsPage.css');
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
