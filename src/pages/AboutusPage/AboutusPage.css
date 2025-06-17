@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+.super--containner
+{
+     padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: url('../../assets/background-image.png') no-repeat center center fixed; 
+  background-size: cover; 
+
+}
+.main--containner
+{
+    margin: 1rem;
+    height: 100%;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(127, 127, 213, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: rgba(40, 40, 70, 0.8);
+ 
+}
+.main--containner:hover {
+    box-shadow: 0 4px 8px rgba(192, 192, 192, 0.3);
+  
+}
+
+.main--containner h1{
+    
+    margin-bottom: 1rem;
+ font-family: 'Roboto Mono', monospace;
+  
+}
+.content1
+{
+    padding: 1rem;
+}
+.content1 p{
+    margin: 5px;
+}
+.content ul{
+    margin: 0px 0px 5px 10px;
+}
+ul img{
+    height: 25px;
+    width: 25px;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    margin: 5px;
+   
+}
+.points
+{
+    margin: auto 0px ;
+}
+.main-containner h2{
+    margin: 2rem 0px ;
+}
+.cards-
+{
+    /* margin-left: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+@media (max-width: 900px) 
+{
+    .main--containner
+    {
+        margin: 1rem 2.5rem;
+    }
+}
+@media (max-width: 600px)
+{
+    .main--containner
+    {
+        margin: 0.5rem;
+    }
+}
+
+
+

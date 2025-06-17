@@ -1,0 +1,60 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-nav {
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3c3c5c; 
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #a29bfe; 
+  text-decoration: none;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+  color: #86a8e7; 
+}
+
+.social-links-nav a {
+  color: #e0e0e0;
+  margin-left: 1rem;
+  font-size: 1.2rem; 
+}
+.social-links-nav a:hover {
+  color: #7f7fd5;
+}
+
+.content-area {
+  flex-grow: 1; 
+}
+
+.app-footer {
+  background: #101020; 
+  color: #a0a0a0;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #3c3c5c;
+  font-size: 0.9rem;
+}
